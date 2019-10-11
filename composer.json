@@ -48,5 +48,16 @@
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
-    }
+    },
+    "scripts": {
+        "build": [
+          "php bin/satis build satis.json build"
+        ],
+        "purge": [
+          "php bin/satis purge satis.json build"
+        ],
+        "deploy": [
+          "gsutil rsync -r -d -C build/ gs://packages.svbk.it && gsutil setmeta -h 'Cache-Control: public, max-age=30' gs://packages.svbk.it/packages.json"
+        ]     
+      }        
 }
