@@ -1,0 +1,898 @@
+{
+  "name": "silverback/packagist",
+  "homepage": "https://packages.svbk.it",
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-website" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/rcp-company-details" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/rcp-countdown" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/rcp-coursepress" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/rcp-fattureincloud" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/svbk-rcp-getresponse" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-mandrill-emails" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/fattureincloud" },    
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-shortcakes" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-themehelpers" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-widgets" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-page-domain-mapping" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-privatearea" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-rcp-proof" },
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/_svbk" },
+    { "type": "vcs", "url": "https://github.com/facebookincubator/facebook-for-woocommerce" },      
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/woocommerce-fattureincloud" },      
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/woocommerce-funnels" },      
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/sensei-ratings" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-email" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-forms" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/monolog-sendinblue" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-log" },   
+    { "type": "vcs", "url": "https://gitlab.com/silverbackstudio/gazelle.git" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-blocks.git" },   
+    { "type": "vcs", "url": "https://github.com/silverbackstudio/wp-hubspot.git" },   
+    {    
+      "type": "package",
+      "package": {
+          "name": "elliotcondon/advanced-custom-fields-pro",
+          "type": "wordpress-plugin",
+          "version": "5.5.14",
+          "dist": {
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9ODQ4Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA3LTA0IDEwOjA4OjAy&t=5.5.14",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "elliotcondon/advanced-custom-fields-pro",
+          "type": "wordpress-plugin",
+          "version": "5.6.10",
+          "dist": {
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9ODQ4Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA3LTA0IDEwOjA4OjAy&t=5.6.10",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "elliotcondon/advanced-custom-fields-pro",
+          "type": "wordpress-plugin",
+          "version": "5.7.12",
+          "dist": {
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9ODQ4Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA3LTA0IDEwOjA4OjAy&t=5.7.12",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "elliotcondon/advanced-custom-fields-pro",
+          "type": "wordpress-plugin",
+          "version": "5.7.13",
+          "dist": {
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9ODQ4Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA3LTA0IDEwOjA4OjAy&t=5.7.13",
+              "type": "zip"
+          }
+      }
+    },    
+    {    
+      "type": "package",
+      "package": {
+          "name": "elliotcondon/advanced-custom-fields-pro",
+          "type": "wordpress-plugin",
+          "version": "5.8.2",
+          "dist": {
+              "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9ODQ4Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTA3LTA0IDEwOjA4OjAy&t=5.8.2",
+              "type": "zip"
+          }
+      }
+    },         
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliate-wp",
+          "type": "wordpress-plugin",
+          "version": "2.1.18",
+          "dist": {
+              "url": "https://affiliatewp.com/index.php?eddfile=197797%3A17%3A0%3A0&ttl=1526618410&file=0&token=bbd70b846ba44d100899d97c0e0f642c",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliate-wp",
+          "type": "wordpress-plugin",
+          "version": "2.2.14",
+          "dist": {
+              "url": "https://affiliatewp.com/index.php?eddfile=197797%3A17%3A0%3A0&ttl=1551324300&file=0&token=8ce949bdbf2b27f7412f545f182e74bd",
+              "type": "zip"
+          }
+      }
+    },     
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-tiered-affiliate-rates",
+          "type": "wordpress-plugin",
+          "version": "1.1",
+          "dist": {
+              "url": "packages/affiliatewp/affiliatewp-tiered-affiliate-rates-1.1.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=1.0.5"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-paypal-payouts",
+          "type": "wordpress-plugin",
+          "version": "1.1.8",
+          "dist": {
+              "url": "packages/affiliatewp/affiliate-wp-paypal-payouts-1.1.9.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=1.7"
+          }          
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-lifetime-commissions",
+          "type": "wordpress-plugin",
+          "version": "1.2.5",
+          "dist": {
+              "url": "packages/affiliatewp/affiliate-wp-lifetime-commissions-1.2.5.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=1.7.10"
+          }          
+      }
+    },   
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-dashboard-sharing",
+          "type": "wordpress-plugin",
+          "version": "1.1.4",
+          "dist": {
+              "url": "packages/affiliatewp/affiliatewp-affiliate-dashboard-sharing-1.1.4.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=1.6"
+          } 
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-signup-referrals",
+          "type": "wordpress-plugin",
+          "version": "1.0.1",
+          "dist": {
+              "url": "packages/affiliatewp/affiliatewp-signup-referrals-1.0.1.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=1.7.14"
+          }            
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-affiliate-landing-pages",
+          "type": "wordpress-plugin",
+          "version": "1.0.2",
+          "dist": {
+              "url": "packages/affiliatewp/affiliatewp-affiliate-landing-pages-1.0.2.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=2.0.2"
+          }            
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "affiliatewp/affiliatewp-custom-affiliate-slugs",
+          "type": "wordpress-plugin",
+          "version": "1.0.2",
+          "dist": {
+              "url": "packages/affiliatewp/affiliatewp-custom-affiliate-slugs-1.0.2.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "affiliatewp/affiliate-wp": ">=2.0.2"
+          }            
+      }
+    },      
+    {    
+      "type": "path",
+      "url": "packages/google-wordpress-plugins/gcs-media-plugin"
+    },
+    {    
+      "type": "path",
+      "url": "packages/google-wordpress-plugins/appengine-plugin"
+    },
+    {    
+      "type": "vcs",
+      "url": "./packages/restrict-content-pro/restrict-content-pro/"
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "restrictcontentpro/rcp-limited-quantity-available",
+          "type": "wordpress-plugin",
+          "version": "1.0.0",
+          "dist": {
+              "url": "packages/restrict-content-pro/rcp-limited-quantity-available.latest-stable.zip",
+              "type": "zip"
+          },
+          "require" : {
+              "restrictcontentpro/restrict-content-pro": "^2.0.0"
+          }            
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "wpmudev/domain-mapping",
+          "type": "wordpress-plugin",
+          "version": "4.4.2.5",
+          "dist": {
+              "url": "packages/wpmudev/domain-mapping.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "woothemes/woothemes-sensei",
+          "type": "wordpress-plugin",
+          "version": "1.9.20",
+          "dist": {
+              "url": "packages/woo/woothemes-sensei-1.9.20.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "woothemes/woothemes-sensei",
+          "type": "wordpress-plugin",
+          "version": "1.10.1",
+          "dist": {
+              "url": "packages/woo/woothemes-sensei-1.10.1.zip",
+              "type": "zip"
+          }
+      }
+    }, 
+    {    
+      "type": "package",
+      "package": {
+          "name": "woothemes/woothemes-sensei",
+          "type": "wordpress-plugin",
+          "version": "1.11.0",
+          "dist": {
+              "url": "packages/woo/woothemes-sensei-1.11.0.zip",
+              "type": "zip"
+          }
+      }
+    }, 
+    {    
+      "type": "package",
+      "package": {
+          "name": "woothemes/woothemes-sensei",
+          "type": "wordpress-plugin",
+          "version": "1.12.2",
+          "dist": {
+              "url": "packages/woo/woothemes-sensei-1.12.2.zip",
+              "type": "zip"
+          }
+      }
+    },     
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.3.1",
+          "dist": {
+              "url": "https://xlplugins.com/index.php?eddfile=19168%3A5183%3A1%3A2&ttl=1518204453&file=1&token=5b122efc898ce78fb00d480cca7232d6",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.4.2",
+          "dist": {
+              "url": "https://xlplugins.com/index.php?eddfile=19168%3A5183%3A1%3A2&ttl=1519743805&file=1&token=c8632c505a585400703d5f0f263f66f9",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.4.5",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.4.5.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.4.6",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.4.6.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.7.0",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.7.0.zip",
+              "type": "zip"
+          }
+      }
+    }, 
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.9.0",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.9.0.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.12.0",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.12.0.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.12.3",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.12.3.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin",
+          "type": "wordpress-plugin",
+          "version": "2.13.0",
+          "dist": {
+              "url": "packages/xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin-v2.13.0.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-google-analytics-pro",
+          "type": "wordpress-plugin",
+          "version": "1.3.6",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-google-analytics-pro-1.3.6.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-google-analytics-pro",
+          "type": "wordpress-plugin",
+          "version": "1.4.0",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-google-analytics-pro-1.4.0.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-google-analytics-pro",
+          "type": "wordpress-plugin",
+          "version": "1.4.1",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-google-analytics-pro-1.4.1.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-google-analytics-pro",
+          "type": "wordpress-plugin",
+          "version": "1.5.0",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-google-analytics-pro-1.5.0.zip",
+              "type": "zip"
+          }
+      }
+    }, 
+    {    
+      "type": "package",
+      "package": {
+          "name": "prospress/woocommerce-one-page-checkout",
+          "type": "wordpress-plugin",
+          "version": "1.5.3",
+          "dist": {
+              "url": "packages/woo/woocommerce-one-page-checkout-1.5.3.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "storeapps/woocommerce-chained-products",
+          "type": "wordpress-plugin",
+          "version": "2.6.0",
+          "dist": {
+              "url": "packages/woo/woocommerce-chained-products-2.6.0.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "storeapps/woocommerce-chained-products",
+          "type": "wordpress-plugin",
+          "version": "2.6.2",
+          "dist": {
+              "url": "packages/woo/woocommerce-chained-products-2.6.2.zip",
+              "type": "zip"
+          }
+      }
+    },    
+    {    
+      "type": "package",
+      "package": {
+          "name": "somewherewarm/woocommerce-product-bundles",
+          "type": "wordpress-plugin",
+          "version": "5.7.3",
+          "dist": {
+              "url": "packages/woo/woocommerce-product-bundles-5.7.3.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "somewherewarm/woocommerce-product-bundles",
+          "type": "wordpress-plugin",
+          "version": "5.7.10",
+          "dist": {
+              "url": "packages/woo/woocommerce-product-bundles-5.7.10.zip",
+              "type": "zip"
+          }
+      }
+    },    
+    {    
+      "type": "package",
+      "package": {
+          "name": "somewherewarm/woocommerce-product-bundles",
+          "type": "wordpress-plugin",
+          "version": "5.14.2",
+          "dist": {
+              "url": "packages/woo/woocommerce-product-bundles-5.14.2.zip",
+              "type": "zip"
+          }
+      }
+    },    
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-social-login",
+          "type": "wordpress-plugin",
+          "version": "2.5.1",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-social-login-2.5.1.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-social-login",
+          "type": "wordpress-plugin",
+          "version": "2.6.0",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-social-login-2.6.0.zip",
+              "type": "zip"
+          }
+      }
+    },    
+    {    
+      "type": "package",
+      "package": {
+          "name": "prospress/woocommerce-subscriptions",
+          "type": "wordpress-plugin",
+          "version": "2.2.21",
+          "dist": {
+              "url": "packages/prospress/woocommerce-subscriptions-2.2.21.zip",
+              "type": "zip"
+          }
+      }
+    },
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-url-coupons",
+          "type": "wordpress-plugin",
+          "version": "2.7.3",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-url-coupons-2.7.3.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "inpsyde/multilingualpress",
+          "type": "wordpress-plugin",
+          "version": "3.1.2",
+          "dist": {
+              "url": "packages/inpsyde/multilingualpress-3.1.2.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "inpsyde/multilingualpress",
+          "type": "wordpress-plugin",
+          "version": "3.2.0",
+          "dist": {
+              "url": "packages/inpsyde/multilingualpress-3.2.0.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "inpsyde/multilingualpress",
+          "type": "wordpress-plugin",
+          "version": "3.3.1",
+          "dist": {
+              "url": "packages/inpsyde/multilingualpress-3.3.1.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "woocommerce/woocommerce-product-addons",
+          "type": "wordpress-plugin",
+          "version": "3.0.12",
+          "dist": {
+              "url": "packages/woo/woocommerce-product-addons-3.0.12.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "woocommerce/woocommerce-warranty",
+          "type": "wordpress-plugin",
+          "version": "1.9.0",
+          "dist": {
+              "url": "packages/woo/woocommerce-warranty-1.9.0.zip",
+              "type": "zip"
+          }
+      }
+    },      
+    {    
+      "type": "package",
+      "package": {
+          "name": "woocommerce/woocommerce-shipment-tracking",
+          "type": "wordpress-plugin",
+          "version": "1.6.15",
+          "dist": {
+              "url": "packages/woo/woocommerce-shipment-tracking-1.6.15.zip",
+              "type": "zip"
+          }
+      }
+    },  
+    {    
+      "type": "package",
+      "package": {
+          "name": "skyverge/woocommerce-order-status-manager",
+          "type": "wordpress-plugin",
+          "version": "1.10.3",
+          "dist": {
+              "url": "packages/skyverge/woocommerce-order-status-manager-1.10.3.zip",
+              "type": "zip"
+          }
+      }
+    },          
+    {    
+      "type": "package",
+      "package": {
+          "name": "prospress/automatewoo",
+          "type": "wordpress-plugin",
+          "version": "1.10.3",
+          "dist": {
+              "url": "packages/prospress/automatewoo-4.6.1.zip",
+              "type": "zip"
+          }
+      }
+    },          
+    {    
+      "type": "package",
+      "package": {
+          "name": "woocommerce/woocommerce-deposits",
+          "type": "wordpress-plugin",
+          "version": "1.4.14",
+          "dist": {
+              "url": "packages/woo/woocommerce-deposits-1.4.14.zip",
+              "type": "zip"
+          }
+      }
+    },          
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-pro",
+            "type": "wordpress-plugin",
+            "version": "2.6.2",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-pro-2.6.2.zip",
+                "type": "zip"
+            }
+        }
+    },     
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-responsive",
+            "type": "wordpress-plugin",
+            "version": "1.8.10",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-responsive-1.8.10.zip",
+                "type": "zip"
+            }
+        }
+    }, 
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-tracking",
+            "type": "wordpress-plugin",
+            "version": "1.20.0",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-tracking-1.20.0.zip",
+                "type": "zip"
+            }
+        }
+    }, 
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-layer",
+            "type": "wordpress-plugin",
+            "version": "1.6.5",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-layer-1.6.5.zip",
+                "type": "zip"
+            }
+        }
+    },
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-selling",
+            "type": "wordpress-plugin",
+            "version": "1.2.7",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-selling-1.2.7.zip",
+                "type": "zip"
+            }
+        }
+    },
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-sticky-ads",
+            "type": "wordpress-plugin",
+            "version": "1.7.10",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-sticky-ads-1.7.10.zip",
+                "type": "zip"
+            }
+        }
+    },                       
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-slider",
+            "type": "wordpress-plugin",
+            "version": "1.4.6",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-slider-1.4.6.zip",
+                "type": "zip"
+            }
+        }
+    },                       
+    {    
+        "type": "package",
+        "package": {
+            "name": "advanced-ads/advanced-ads-geo",
+            "type": "wordpress-plugin",
+            "version": "1.3.2",
+            "dist": {
+                "url": "packages/advanced-ads/advanced-ads-geo-1.3.2.zip",
+                "type": "zip"
+            }
+        }
+    },                       
+    {    
+      "type": "package",
+      "package": {
+          "name": "silverbackstudio/wp-email",
+          "type": "library",
+          "authors": [
+              {
+                  "name": "Brando Meniconi",
+                  "email": "b.meniconi@silverbackstudio.it"
+              }
+          ],
+          "autoload": {
+              "psr-4": {"Svbk\\WP\\Email\\": "src/"}
+          },   
+          "require": {
+              "drewm/mailchimp-api": "^2.4",
+              "mandrill/mandrill": "^1.0",
+              "getresponse/getresponse": "^0.0.2",
+              "sendinblue/api-v3-sdk": "^4.0"
+          },
+          "require-dev": {
+              "phpunit/phpunit": "^5.7",
+              "wp-coding-standards/wpcs": "^0.13.1",
+              "dealerdirect/phpcodesniffer-composer-installer": "^0.4.2",
+              "wimg/php-compatibility": "^8.0"        
+          },          
+          "version": "1.4.1",
+          "dist": {
+              "url": "packages/silverbackstudio/wp-email-1.4.1.zip",
+              "type": "zip"
+          }
+      }
+    },          
+    {    
+      "type": "path",
+      "url": "packages/gutenberg-section-block"
+    }
+  ],
+ "require": {
+    "silverback/wp-website": ">=2.0",
+    "silverbackstudio/svbk-rcp-company-details": "*",
+    "silverbackstudio/svbk-rcp-countdown": "*",
+    "silverbackstudio/svbk-rcp-coursepress": "*",
+    "silverbackstudio/svbk-rcp-getresponse": "*",
+    "silverbackstudio/svbk-rcp-fattureincloud": "*",
+    "silverbackstudio/svbk-mandrill-emails": "*",
+    "silverback/fattureincloud": "*",
+    "silverbackstudio/wp-shortcakes" : ">=3.2",
+    "silverbackstudio/wp-widgets" : ">=2.1.5",
+    "silverbackstudio/wp-page-domain-mapping" : "*",
+    "silverbackstudio/wp-privatearea" : ">=1.1.0",
+    "silverbackstudio/rcp-proof" : "^1.0.0",
+    "silverbackstudio/theme_svbk" : "*",    
+    "google/google-cloud-storage-wordpress-plugin": "*",
+    "google/appengine-wordpress-plugin": "*",
+    "elliotcondon/advanced-custom-fields-pro": "*",
+    "affiliatewp/affiliate-wp": "*",
+    "affiliatewp/affiliatewp-tiered-affiliate-rates": "*",
+    "affiliatewp/affiliatewp-paypal-payouts": "*",
+    "affiliatewp/affiliatewp-lifetime-commissions": "*",
+    "affiliatewp/affiliatewp-dashboard-sharing": "*",
+    "affiliatewp/affiliatewp-signup-referrals": "*",
+    "affiliatewp/affiliatewp-affiliate-landing-pages": "*",
+    "affiliatewp/affiliatewp-custom-affiliate-slugs": "^1.0.0",
+    "restrictcontentpro/restrict-content-pro": "^2.8.6",
+    "restrictcontentpro/rcp-limited-quantity-available": "*",
+    "facebookincubator/facebook-for-woocommerce" : ">=1.4.0",
+    "wpmudev/domain-mapping" : ">=1.6.0",
+    "silverbackstudio/woocommerce-fattureincloud" : ">=1.0.0",
+    "woothemes/woothemes-sensei" : ">=0.7.0",
+    "xlplugins/finale-woocommerce-sales-countdown-timer-discount-plugin" : ">=2.2.0",
+    "skyverge/woocommerce-google-analytics-pro" : ">=1.3.6",
+    "prospress/woocommerce-one-page-checkout": ">=1.5.0",
+    "silverbackstudio/woocommerce-funnels": ">=1.0.0",
+    "storeapps/woocommerce-chained-products": ">=2.6.0",
+    "somewherewarm/woocommerce-product-bundles": ">=5.7.3",
+    "silverbackstudio/sensei-ratings": ">=1.0.0",
+    "silverback/svbk-wp-email": "^2.0.0",
+    "silverbackstudio/wp-email": "^1.0.0",
+    "silverbackstudio/wp-forms": ">=1.0.0",
+    "prospress/woocommerce-subscriptions": "*",
+    "skyverge/woocommerce-social-login": "*",
+    "silverbackstudio/monolog-sendinblue" : ">=1.0.0",
+    "silverbackstudio/wp-log" : ">=1.0.0",
+    "silverback/gazelle" : ">=1.0.0",
+    "silverback/svbk-wp-blocks": ">=1.0.0",
+    "silverback/wp-helpers" : ">=5.0",
+    "skyverge/woocommerce-url-coupons": ">=2.7.",
+    "silverback/svbk-wp-hubspot": ">=1.0.0",
+    "inpsyde/multilingualpress": ">=3.0.0",
+    "woocommerce/woocommerce-product-addons": ">=3.0.0",
+    "woocommerce/woocommerce-warranty": ">=1.9.0",
+    "woocommerce/woocommerce-shipment-tracking": "*",
+    "skyverge/woocommerce-order-status-manager": "*",
+    "prospress/automatewoo": "*",
+    "woocommerce/woocommerce-deposits": "*",
+    "advanced-ads/advanced-ads-pro": "*",
+    "advanced-ads/advanced-ads-responsive": "*",
+    "advanced-ads/advanced-ads-tracking": "*",
+    "advanced-ads/advanced-ads-layer": "*",
+    "advanced-ads/advanced-ads-selling": "*",
+    "advanced-ads/advanced-ads-sticky-ads": "*",
+    "advanced-ads/advanced-ads-slider": "*",
+    "advanced-ads/advanced-ads-geo": "*"
+  },
+  "archive": {
+      "directory": "dist",
+      "format": "tar",
+      "prefix-url": "https://packages.svbk.it",
+      "skip-dev": true
+  }   
+}
