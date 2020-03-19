@@ -8,6 +8,8 @@ Simple static Composer repository generator.
 
 ## Run from source
 
+Satis requires a recent PHP version, it does not run with unsupported PHP versions. Check the `composer.json` file for details.
+
 - Install satis: `composer create-project composer/satis:dev-master`
 - Build a repository: `php bin/satis build <configuration-file> <output-directory>`
 
@@ -68,6 +70,8 @@ By participating in this project you agree to abide by its terms.
 
 Fork the project, create a feature branch, and send us a pull request.
 
+If you introduce a new feature, or fix a bug, please try to include a testcase.
+
 
 ## Authors
 
@@ -84,9 +88,11 @@ See the list of [contributors][] who participate(d) in this project.
 - [composer-satis-builder][] - Simple tool for updating the Satis configuration
     (satis.json) "require" key on the basis of the project composer.json.
 
+
 ## Examples
 
 - [eventum/composer] - A simple static set of packages hosted in GitHub Pages
+
 
 ## License
 

@@ -28,6 +28,7 @@ use Composer\Repository\ConfigurableRepositoryInterface;
 use Composer\Repository\PlatformRepository;
 use Composer\Repository\RepositoryInterface;
 use Composer\Semver\Constraint\EmptyConstraint;
+use Composer\Semver\VersionParser;
 use Composer\Util\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -84,6 +85,9 @@ class PackageSelection
     /** @var array A list of packages marked as abandoned */
     private $abandoned = [];
 
+    /** @var array A list of blacklisted package/constraints. */
+    private $blacklist = [];
+
     /** @var array|bool Patterns from strip-hosts. */
     private $stripHosts = false;
 
@@ -111,6 +115,11 @@ class PackageSelection
     public function hasRepositoryFilter(): bool
     {
         return null !== $this->repositoryFilter;
+    }
+
+    public function hasBlacklist(): bool
+    {
+        return count($this->blacklist) > 0;
     }
 
     public function setPackagesFilter(array $packagesFilter = []): void
@@ -145,7 +154,9 @@ class PackageSelection
 
             if (0 === count($repos)) {
                 throw new \InvalidArgumentException(sprintf('Specified repository url "%s" does not exist.', $this->repositoryFilter));
-            } elseif (count($repos) > 1) {
+            }
+
+            if (count($repos) > 1) {
                 throw new \InvalidArgumentException(sprintf('Found more than one repository for url "%s".', $this->repositoryFilter));
             }
         }
@@ -154,9 +165,17 @@ class PackageSelection
             $repos = $this->filterPackages($repos);
 
             if (0 === count($repos)) {
-                throw new \InvalidArgumentException(sprintf('Specified package name "%s" does not exist.', $this->packagesFilter));
-            } elseif (count($repos) > 1) {
-                throw new \InvalidArgumentException(sprintf('Found more than one package name "%s".', $this->packagesFilter));
+                throw new \InvalidArgumentException(sprintf(
+                    'Could not find any package(s) matching: %s',
+                    implode(', ', $this->packagesFilter)
+                ));
+            }
+
+            if (count($repos) > 1) {
+                throw new \InvalidArgumentException(sprintf(
+                    'Found more than one package matching: %s',
+                    implode(', ', $this->packagesFilter)
+                ));
             }
         }
 
@@ -186,6 +205,8 @@ class PackageSelection
         }
 
         $this->setSelectedAsAbandoned();
+
+        $this->pruneBlacklisted($pool, $verbose);
 
         ksort($this->selected, SORT_STRING);
 
@@ -306,6 +327,7 @@ class PackageSelection
         $this->minimumStability = $config['minimum-stability'] ?? 'dev';
         $this->minimumStabilityPerPackage = $config['minimum-stability-per-package'] ?? [];
         $this->abandoned = $config['abandoned'] ?? [];
+        $this->blacklist = $config['blacklist'] ?? [];
 
         $this->stripHosts = $this->createStripHostsPatterns($config['strip-hosts'] ?? false);
         $this->archiveEndpoint = isset($config['archive']['directory']) ? ($config['archive']['prefix-url'] ?? $config['homepage']) . '/' : null;
@@ -365,7 +387,7 @@ class PackageSelection
             } else {
                 $mask = (int) $mask;
 
-                if ($mask < 0 || 'ipv4' === $type && $mask > 32 || 'ipv6' === $type && $mask > 128) {
+                if ($mask < 0 || ('ipv4' === $type && $mask > 32) || ('ipv6' === $type && $mask > 128)) {
                     continue;
                 }
             }
@@ -452,10 +474,10 @@ class PackageSelection
             @list($type, $host, $mask) = $pattern;
 
             if ('/local' === $type) {
-                if ('name' === $urltype && 'localhost' === strtolower($url)
-                    || ('ipv4' === $urltype || 'ipv6' === $urltype)
-                    && false === filter_var($url, FILTER_VALIDATE_IP, FILTER_FLAG_NO_RES_RANGE)
-                ) {
+                if (('name' === $urltype && 'localhost' === strtolower($url)) || (
+                    ('ipv4' === $urltype || 'ipv6' === $urltype) &&
+                    false === filter_var($url, FILTER_VALIDATE_IP, FILTER_FLAG_NO_RES_RANGE)
+                )) {
                     return true;
                 }
             } elseif ('/private' === $type) {
@@ -532,6 +554,37 @@ class PackageSelection
     }
 
     /**
+     * Removes selected packages which are blacklisted in configuration.
+     *
+     * @param Pool $pool
+     * @param bool $verbose
+     *
+     * @return PackageInterface[]
+     */
+    private function pruneBlacklisted($pool, $verbose): array
+    {
+        $blacklisted = [];
+        if ($this->hasBlacklist()) {
+            $parser = new VersionParser();
+            foreach ($this->selected as $selectedKey => $package) {
+                foreach ($this->blacklist as $blacklistName => $blacklistConstraint) {
+                    $constraint = $parser->parseConstraints($blacklistConstraint);
+                    if ($pool::MATCH === $pool->match($package, $blacklistName, $constraint, FALSE)) {
+                       if ($verbose) {
+                          $this->output->writeln('Blacklisted ' . $package->getPrettyName() . ' (' . $package->getPrettyVersion() . ')');
+                       }
+                       $blacklisted[$selectedKey] = $package;
+                       unset($this->selected[$selectedKey]);
+                    }
+                }
+            }
+        }
+        return $blacklisted;
+    }
+
+    /**
+     * Gets a list of filtered Links.
+     *
      * @param Composer $composer
      *
      * @return Link[]
